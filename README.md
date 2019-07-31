@@ -27,7 +27,7 @@ Send your data to a test environment.
 
 ## Getting Started
 
-* The ABT Matrix
+* [The ABT Matrix](atomics/matrix.md)
 * Event Code Library
 * Techniques
 
