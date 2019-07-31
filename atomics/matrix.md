@@ -1,4 +1,4 @@
-# All Atomic Tests by ATT&CK Tactic & Technique
+# All Rules by ATT&CK Tactic & Technique
 | initial-access | execution | persistence | privilege-escalation | defense-evasion | credential-access | discovery | lateral-movement | collection | exfiltration | command-and-control |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Drive-by Compromise [CONTRIBUTE A TEST](https://atomicredteam.io/contributing) | [AppleScript](./T1155/T1155.md) | [.bash_profile and .bashrc](./T1156/T1156.md) | [Access Token Manipulation](./T1134/T1134.md) | [Access Token Manipulation](./T1134/T1134.md) | [Account Manipulation](./T1098/T1098.md) | [Account Discovery](./T1087/T1087.md) | [AppleScript](./T1155/T1155.md) | [Audio Capture](./T1123/T1123.md) | Automated Exfiltration [CONTRIBUTE A TEST](https://atomicredteam.io/contributing) | Commonly Used Port [CONTRIBUTE A TEST](https://atomicredteam.io/contributing) |

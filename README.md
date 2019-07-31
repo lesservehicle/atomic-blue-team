@@ -1,61 +1,43 @@
-<p><img src="https://redcanary.com/wp-content/uploads/Atomic-Red-Team-Logo.png" width="150px" /></p>
+# Atomic Blue Team
 
-# Atomic Red Team
-[![CircleCI](https://circleci.com/gh/redcanaryco/atomic-red-team.svg?style=svg)](https://circleci.com/gh/redcanaryco/atomic-red-team)
-
-Atomic Red Team allows every security team to test their controls by executing simple
-"atomic tests" that exercise the same techniques used by adversaries (all mapped to
-[Mitre's ATT&CK](https://attack.mitre.org/wiki/Main_Page)).
+A compendium of rules and events, created to detect and smite evil.
 
 ## Philosophy
 
-Atomic Red Team is a library of simple tests that every security team can execute to test their controls. Tests are
-focused, have few dependencies, and are defined in a structured format that be used by automation frameworks.
+Atomic Blue Team is a knowledgebase of SIEM rules and their associated prerequisites (Baselines, Windows Event IDs, Linux log files, etc.), designed to provide 1 to 1 coverage against tests in Atomic Red Team. These rules provide coverage to a wide portion of MITRE's ATT&CK Matrix. 
 
-Three key beliefs made up the Atomic Red Team charter:
-- **Teams need to be able to test everything from specific technical controls to outcomes.**
+It currently supports the Splunk Search Processing Language (SPL).
+
+Atomic Blue Team was built on the foundation of these principles:
+
+- **Fundamentals: Blue Teams should be able to detect and respond to commodity attacks before their security programs can become more mature.**
   Our security teams do not want to operate with a “hopes and prayers” attitude toward detection. We need to know
   what our controls and program can detect, and what it cannot. We don’t have to detect every adversary, but we
   do believe in knowing our blind spots.
 
-- **We should be able to run a test in less than five minutes.**
-  Most security tests and automation tools take a tremendous amount of time to install, configure, and execute.
-  We coined the term "atomic tests" because we felt there was a simple way to decompose tests so most could be
-  run in a few minutes.
+- **Baseline _Everything_: The mantra of "know normal, find evil" above all.**
+Accurate detection of anomalous security events is next to impossible if you cannot establish a proper baseline of what is currently running in your environment.
 
-  The best test is the one you actually run.
+- **Repeatability: Testing your controls should be repeatable.**
+You should be able to use Atomic Blue Team in conjunction with Atomic Red Team to perform quickly repeatable tests to ensure that your SIEM is detecting and alerting on anomalous events.
 
-- **We need to keep learning how adversaries are operating.**
-  Most security teams don’t have the benefit of seeing a wide variety of adversary types and techniques crossing
-  their desk every day. Even we at Red Canary only come across a fraction of the possible techniques being used,
-  which makes the community working together essential to making us all better.
+- **Practice: We talkin' 'bout practice!**
+Send your data to a test environment. 
 
-See: https://atomicredteam.io
-
-## Having trouble?
-
-Join the community on Slack at [https://atomicredteam.slack.com](https://atomicredteam.slack.com)
 
 ## Getting Started
 
-* [Getting Started With Atomic Tests](https://atomicredteam.io/testing)
-* Peruse the [Complete list of Atomic Tests](atomics/index.md) and the [ATT&CK Matrix](atomics/matrix.md)
-  - Windows [Tests](atomics/windows-index.md) and [Matrix](atomics/windows-matrix.md)
-  - macOS [Tests](atomics/macos-index.md) and [Matrix](atomics/macos-matrix.md)
-  - Linux [Tests](atomics/linux-index.md) and [Matrix](atomics/linux-matrix.md)
-* [Fork](https://github.com/redcanaryco/atomic-red-team/fork) and [Contribute](https://atomicredteam.io/contributing) your own modifications
-* [Doing more with Atomic Red Team](#doing-more-with-atomic-red-team)
-    * [Using the Atomic Red Team Ruby API](#using-the-atomic-red-team-ruby-api)
-    * [Bonus APIs: Ruby ATT&CK API](#bonus-apis-ruby-attck-api)
-    * [Execution Frameworks](https://github.com/redcanaryco/atomic-red-team/blob/master/execution-frameworks)
-* Have questions? Join the community on Slack at [https://atomicredteam.slack.com](https://atomicredteam.slack.com)
-    * Need a Slack invitation? Grab one at [https://slack.atomicredteam.io/](https://slack.atomicredteam.io/)
+* The ABT Matrix
+* Event Code Library
+* Techniques
+
+## Acknowledgements
+
+* Atomic Red Team
+* MITRE ATT&CK
 
 ## Code of Conduct
-
-In order to have a more open and welcoming community, Atomic Red Team adheres to a
-[code of conduct](CODE_OF_CONDUCT.md).
+TBD
 
 ## License
-
-See the [LICENSE](https://github.com/redcanaryco/atomic-red-team/blob/master/LICENSE.txt) file.
+TBD
