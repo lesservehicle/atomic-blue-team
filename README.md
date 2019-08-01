@@ -28,6 +28,7 @@ Send your data to a test environment.
 ## Getting Started
 
 * [The ABT Matrix](atomics/matrix.md)
+* [List of Atomic Rules by ATT&CK Tactic & Technique](atomics/index.md)
 * Event Code Library
 * Techniques
 
