@@ -70,24 +70,6 @@ Alternately, you can set the following registry value:
 HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging → EnableScriptBlockLogging = 1
 ```
 
-## Transcription Logging
-
-To enable transcription:
-
-1. In the Windows PowerShell GPO settings, set **Turn on PowerShell Transcription** to enabled.
-	- Administrative Templates → Windows Components → Windows PowerShell → Turn on PowerShell Transcription
-2. Check the **Include invocation headers** box, in order to record a timestamp for each command executed.
-3. Optionally, set a centralized transcript output directory.
-	- This directory should be a write-only, restricted network share that security personnel can access. If no output directory is specified, the transcript files will be created under the user’s documents directory.
-
-Alternately, setting the following registry values will enable logging:
-
-```
-HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\Transcription → EnableTranscripting = 1
-HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\Transcription → EnableInvocationHeader = 1
-HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\Transcription → OutputDirectory = “” (Enter path. Empty = default)
-```
-
 ## Command Line Process Auditing
 
 *Only Windows 10 and Server 2012 R2/2016 include the Creator Process Name, which can be useful for detection of which process spawned the script, eg. if a malicious Word document is running a script.*
